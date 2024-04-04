@@ -191,8 +191,8 @@ def courbe(pourcent_chercher2,tiker_live,time1,time_name1,pourcent_chercher,pour
         target2 = J[1] - ((moyenne_tete*5) / 100)
         button2.on_clicked(lambda event: achat(ticker, target1, target2))
         now = datetime.datetime.now()
-        plt.savefig(f'capture/{tiker_live}-{now.strftime("%Hh:%M:%S")}')
-        #plt.show()
+        #plt.savefig(f'capture/{tiker_live}-{now.strftime("%Hh:%M:%S")}')
+        plt.show()
 
 
     # ----- creer la figure et l'affichage MATPLOTLIB -----#
